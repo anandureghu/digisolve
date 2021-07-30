@@ -1,0 +1,204 @@
+html, body{
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* Navbar Section */
+nav{
+	display: inline;
+	padding: 1px;
+}
+nav img{
+	width: 130px;
+	display: inline;
+	float: left;
+}
+nav ul li{
+	display: inline;
+	list-style: none;
+	float: right;
+	color: floralwhite;
+	text-transform: uppercase;
+	margin-right: 40px;
+}
+
+nav ul li:first-child{
+	margin-right: 80px;
+}
+
+nav ul li:hover{
+	border-bottom: 2px solid fuchsia;
+	cursor: pointer;
+}
+
+/* Header Section */
+header{
+	background-image: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .8)), url('img/header-img.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+}
+
+.header-text{
+	color: aliceblue;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	text-align: center;
+}
+
+.header-text h1{
+	font-size: 70px;
+	font-weight: 300;
+}
+
+.header-text h3{
+	font-weight: 500;
+	margin-top: 5%;
+}
+
+/* Button Section */
+
+.btn{
+	text-decoration: none;
+	font-size: 18px;
+	border-radius: 170px;
+	padding: 2% 5%;
+}
+
+.btn-full{
+	background-color: deeppink;
+	color: floralwhite;
+	transition: 0.5s;
+}
+
+.btn-full:hover{
+	background-color: floralwhite;
+	color: deeppink;
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+.btn-ghost{
+	background-color: white;
+	color: deeppink;
+	border: 2px deeppink solid;
+	transition: 0.3s;
+}
+
+.btn-ghost:hover{
+	background-color: deeppink;
+	color: floralwhite;
+	transform: scale(1.05);
+	transition: 0.3s;
+}
+
+.head-cta{
+	margin-top: 5%;
+}
+
+/* About Us Section */
+
+.about-section{
+	padding: 8% 6%;
+}
+
+.about-head{
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.about-details{
+	padding: 50px;
+}
+
+.about-img{
+	text-align: center;
+}
+
+.about-img img{
+	margin: 20px auto;
+	width: 90%;
+}
+
+.about-details{
+	padding: 1% 8%;
+}
+.about-text{
+	font-size: 17px;
+	margin: 7% 0%;
+	line-height: 1.5;
+	color:rgba(0,0,0, .6);
+}
+
+
+/* work Section */
+
+.work-section{
+	text-align: center;
+	background-color: rgba(0,0,0,0.05);
+	padding: 5% 5%;
+	height: 100vh;
+}
+
+.work-title h2{
+	font-size: 65px;
+	font-weight: 600;
+}
+
+.work-title p{
+	font-size: 20px;
+	color: rgba(0,0,0, .6);
+}
+
+.work-title p::after{
+	content: " ";
+	display: block;
+	height: 3px;
+	width: 150px;
+	color: deeppink;
+	background-color: deeppink;
+	margin: 30px auto 50px auto;
+}
+
+.work-images{
+	width: 100%;
+}
+
+.work-images figure {
+	float: left;
+	width: 25%;
+	overflow: hidden;
+}
+
+.work-images figure img{
+	width: 100%;
+	transform: scale(1.2);
+	transition: 0.5s;
+}
+
+.work-images figure p{
+	padding: 2px;
+	background-color: palevioletred;
+	color: white;
+}
+
+.work-images figure img:hover{
+	width: 100%;
+	transform: scale(1);
+	transition: 0.5s;
+}
+
+.clearfix{
+	zoom: 1;
+}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+	visibility: hideen;
+}
