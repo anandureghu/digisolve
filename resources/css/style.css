@@ -27,7 +27,9 @@ nav ul li:first-child{
 	margin-right: 80px;
 }
 
-nav ul li:hover{
+nav ul li:hover,
+nav ul li:visited,
+nav ul li:active{
 	border-bottom: 2px solid fuchsia;
 	cursor: pointer;
 }
@@ -71,15 +73,17 @@ header{
 
 .btn-full{
 	background-color: deeppink;
-	color: floralwhite;
+	color: white;
 	transition: 0.5s;
 }
 
 .btn-full:hover{
-	background-color: floralwhite;
+	background-color: white;
 	color: deeppink;
-	transform: scale(1.05);
+	transform: scale(1.01);
 	transition: 0.5s;
+	border: 2px solid deeppink;
+	outline: none;
 }
 
 .btn-ghost{
@@ -201,4 +205,232 @@ header{
 	display: table;
 	clear: both;
 	visibility: hideen;
+}
+
+/* Service Section */
+
+.service-section{
+	/* height: 90vh; */
+	padding: 5% 5%;
+	text-align: center;
+}
+
+.service-head h2{
+	font-size: 65px;
+	font-weight: 500;
+}
+
+.service-head p{
+	font-size: 25px;
+	margin: 25px 0px;
+	color: gray;
+}
+
+.service-head::after{
+	content: " ";
+	display: block;
+	
+	height: 3px;
+	width: 150px;
+	background-color: deeppink;
+	margin: 30px auto;
+}
+
+.service-contents{
+	margin-top: 50px;
+}
+
+.service-content{
+	padding: 0% 2%;
+}
+
+.service-content h3{
+	font-weight: 500;
+	margin: 30px 0px;
+}
+
+.service-content a{
+	text-decoration: none;
+	color: deeppink;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.icon-demo{
+	font-size: 50px;
+	font-weight: 900;
+	color:blueviolet;
+}
+
+
+/* Featured Clients Section */
+.featured-clients-section{
+	background-color: rgba(0,0,0,0.05);
+	text-align: center;
+	padding: 5% 3%;
+}
+
+.clients-head h2{
+	font-size: 65px;
+}
+
+.clients-head p{
+	font-size: 25px;
+	color: gray;
+	margin: 24px 0px;
+}
+
+.clients-head::after{
+	content: " ";
+	height: 3px;
+	background-color: deeppink;
+	width: 150px;
+	margin: 30px auto;
+	display: block;
+}
+
+.client{
+	height: 180px;
+	width: 250px;
+	margin: auto;
+}
+
+.client img{
+	width: 100%;
+}
+
+/* Testimonials Section */
+
+.testimonials-section{
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.8)) ,url(img/testimonial-background.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding: 5% 5%;
+	text-align: center;
+	background-attachment:fixed;
+}
+
+.testimonials-head h2{
+	font-size: 65px;
+	margin: 30px;
+	font-weight: 300;
+}
+
+.testimonials-contents{
+	margin-top: 8%;
+}
+
+.testimonials-content{
+	text-align: left;
+	font-style: italic;
+	font-size: 20px;
+	padding: 3%;
+	position: relative;
+}
+
+.testimonials-content::before{
+	content: '❝';
+	display: block;
+	font-size: 50px;
+	margin: 0px;
+	position: absolute;
+	top: -13px;
+	left: 30px;
+}
+
+cite img{
+	border-radius: 50%;
+	margin: 10px 20px;
+	margin-left: 0px;
+}
+
+/* Packages section */
+
+.packages-section{
+	padding: 5% 3%;
+	background-color: rgba(0,0,0,0.05);
+}
+
+.package-box{
+	background-color: white;
+	padding: 30px;
+	border-radius: 30px;
+	margin: 30px 20px;
+}
+
+.package-section-title{
+	font-size: 45px;
+	margin-bottom: 40px;
+}
+
+.package-box .price{
+	color: deeppink;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.package-box .price span{
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.package-box .description{
+	color: gray;
+}
+
+.package-details ul{
+	list-style: none;
+}
+
+.package-details ul li{
+	list-style: none;
+	color: gray;
+	padding: 5px 3px;
+	margin-left: 0px;
+}
+
+.package-details .icon{
+	color: deeppink;
+	text-align: center;
+}
+
+.package-box div{
+	border-bottom: 1px solid rgba(0,0,0, .3);
+	padding: 10px 0px;
+}
+
+.package-box div:last-child{
+	border: 0px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+/* Contact section */
+
+.contact-section{
+	padding: 5% 3%;
+	color: gray;
+}
+
+.contact-section h2{
+	font-size: 40px;
+	font-weight: 300;
+	color: black;
+}
+
+.contact-section form{
+	margin: 30px auto;
+}
+
+.contact-section input[type="text"],input[type="email"],textarea{
+	width: 100%;
+	padding: 8px;
+	margin: 10px 0px;
+	border-radius: 5px;
+	outline: none;
+}
+textarea{
+	height: 100px;
 }
