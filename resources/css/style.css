@@ -434,3 +434,36 @@ cite img{
 textarea{
 	height: 100px;
 }
+
+footer{
+	background-color: #212529;
+	color: gray;
+	padding: 3% 5%;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer ul li{
+	display: inline;
+	margin-right: 20px;
+	translate:;
+}
+
+footer ul li a:link,
+footer ul li a:visited{
+	color: gray;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+footer ul li a:hover,
+footer ul li a:active{
+	color: white;
+}
+
+.footer-icons{
+	float: right;
+	font-size: 20px;
+}
