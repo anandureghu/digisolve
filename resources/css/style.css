@@ -2,6 +2,7 @@ html, body{
 	margin: 0;
 	padding: 0px;
 	box-sizing: border-box;
+	font-size: 16px;
 }
 
 /* Navbar Section */
@@ -53,12 +54,12 @@ header{
 }
 
 .header-text h1{
-	font-size: 70px;
-	font-weight: 300;
+	font-size: 500%;
+	font-weight: 400;
 }
 
 .header-text h3{
-	font-weight: 500;
+	font-weight: 300;
 	margin-top: 5%;
 }
 
@@ -66,7 +67,7 @@ header{
 
 .btn{
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 110%;
 	border-radius: 170px;
 	padding: 2% 5%;
 }
@@ -111,8 +112,8 @@ header{
 }
 
 .about-head{
-	font-size: 45px;
-	font-weight: 700;
+	font-size: 260%;
+	font-weight: 600;
 }
 
 .about-details{
@@ -145,20 +146,19 @@ header{
 	text-align: center;
 	background-color: rgba(0,0,0,0.05);
 	padding: 5% 5%;
-	height: 100vh;
 }
 
-.work-title h2{
-	font-size: 65px;
+.section-head{
+	font-size: 400%;
 	font-weight: 600;
 }
 
-.work-title p{
-	font-size: 20px;
+.section-sub{
+	font-size: 130%;
 	color: rgba(0,0,0, .6);
 }
 
-.work-title p::after{
+.section-sub::after{
 	content: " ";
 	display: block;
 	height: 3px;
@@ -166,10 +166,12 @@ header{
 	color: deeppink;
 	background-color: deeppink;
 	margin: 30px auto 50px auto;
+	overflow: hidden;
 }
 
 .work-images{
 	width: 100%;
+	overflow: hidden;
 }
 
 .work-images figure {
@@ -188,6 +190,7 @@ header{
 	padding: 2px;
 	background-color: palevioletred;
 	color: white;
+	overflow: hidden;
 }
 
 .work-images figure img:hover{
@@ -204,7 +207,7 @@ header{
 	content: "";
 	display: table;
 	clear: both;
-	visibility: hideen;
+	visibility: hidden;
 }
 
 /* Service Section */
@@ -215,26 +218,6 @@ header{
 	text-align: center;
 }
 
-.service-head h2{
-	font-size: 65px;
-	font-weight: 500;
-}
-
-.service-head p{
-	font-size: 25px;
-	margin: 25px 0px;
-	color: gray;
-}
-
-.service-head::after{
-	content: " ";
-	display: block;
-	
-	height: 3px;
-	width: 150px;
-	background-color: deeppink;
-	margin: 30px auto;
-}
 
 .service-contents{
 	margin-top: 50px;
@@ -242,6 +225,7 @@ header{
 
 .service-content{
 	padding: 0% 2%;
+	margin-bottom: 5%;
 }
 
 .service-content h3{
@@ -270,25 +254,6 @@ header{
 	padding: 5% 3%;
 }
 
-.clients-head h2{
-	font-size: 65px;
-}
-
-.clients-head p{
-	font-size: 25px;
-	color: gray;
-	margin: 24px 0px;
-}
-
-.clients-head::after{
-	content: " ";
-	height: 3px;
-	background-color: deeppink;
-	width: 150px;
-	margin: 30px auto;
-	display: block;
-}
-
 .client{
 	height: 180px;
 	width: 250px;
@@ -312,7 +277,7 @@ header{
 }
 
 .testimonials-head h2{
-	font-size: 65px;
+	font-size: 400%;
 	margin: 30px;
 	font-weight: 300;
 }
@@ -324,7 +289,7 @@ header{
 .testimonials-content{
 	text-align: left;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 130%;
 	padding: 3%;
 	position: relative;
 }
@@ -366,12 +331,12 @@ cite img{
 
 .package-box .price{
 	color: deeppink;
-	font-size: 30px;
+	font-size: 200%;
 	font-weight: 400;
 }
 
 .package-box .price span{
-	font-size: 18px;
+	font-size: 60%;
 	font-weight: 400;
 }
 
@@ -415,7 +380,7 @@ cite img{
 }
 
 .contact-section h2{
-	font-size: 40px;
+	font-size: 260%;
 	font-weight: 300;
 	color: black;
 }
@@ -448,22 +413,22 @@ footer ul{
 footer ul li{
 	display: inline;
 	margin-right: 20px;
-	translate:;
 }
 
 footer ul li a:link,
 footer ul li a:visited{
 	color: gray;
 	text-decoration: none;
-	transition: color 0.2s;
+	transition:0.2s;
 }
 
 footer ul li a:hover,
 footer ul li a:active{
 	color: white;
+	transition:0.3s;
 }
 
 .footer-icons{
 	float: right;
-	font-size: 20px;
+	font-size: 130%;
 }

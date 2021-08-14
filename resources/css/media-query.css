@@ -1,0 +1,117 @@
+@media only screen and (max-width:1200px){
+    .header-text h3{
+        font-weight: 300;
+    }
+    .about-img{
+        margin-top: 7%;
+    }
+
+    .work-images figure p{
+        padding: 0px 2px;
+        margin: 0px;
+    }
+
+}
+
+@media only screen and (max-width:1024px){
+
+    html, body{
+        font-size: 14px;
+    }
+
+    .header-text h1{
+        font-size: 460%;
+        font-weight: 400;
+    }
+
+    .about-img{
+        margin-top: 12%;
+    }
+
+    .work-images{
+        width: 60%;
+    }
+
+    .work-images figure {
+        width: 50%;
+        margin-bottom: 0px;
+    }
+
+    .testimonials-content::before{
+        left: 15px;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (max-width:768px){
+    html, body{
+        font-size: 12px;
+    }
+
+    .header-text h1{
+        font-size: 460%;
+        font-weight: 400;
+    }
+
+    .about-section{
+        text-align: center;
+    }
+
+    .about-img{
+        margin-top: 3%;
+    }
+
+    .work-images{
+        width: 75%;
+    }
+
+    .service-content h3{
+        font-weight: 500;
+        margin: 20px 0px;
+    }
+    
+    .testimonials-content::before{
+        top: -13px;
+        left: 10px;
+        line-height: 1.2;
+    }
+    cite{
+        text-align: end;
+    }
+
+}
+
+@media only screen and (max-width:480px){
+
+    html, body{
+        font-size: 12px;
+    }
+
+    .testimonials-content::before{
+        top: -20px;
+        left: 8px;
+    }
+
+    .testimonials-content{
+        margin-top: 20px;
+    }
+
+    .package-section-title{
+        padding: 6%;
+        font-size: 300%;
+        margin-bottom: 10px;
+    }
+
+    .footer-icons{
+        float: none;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .work-images{
+        width: 100%;
+    }
+
+}
